@@ -51,27 +51,30 @@ cask 'font-work-sans'
 cask '1password'
 cask 'adobe-creative-cloud'
 cask 'calibre'
+cask 'cyberduck'
 cask 'discord'
 cask 'dozer'
 cask 'figma'
 cask 'firefox'
 cask 'framer'
 cask 'garmin-express'
+cask 'google-chrome'
 cask 'google-backup-and-sync'
 cask 'iina'
 cask 'iterm2'
 cask 'keyboard-maestro'
 cask 'karabiner-elements'
-cask 'krisp'
 cask 'homebrew/cask-drivers/logitech-options'
 cask 'loom'
 cask 'notion'
 cask 'now'
+cask 'obsidian'
 cask 'plex'
 cask 'sketch'
 cask 'spotify'
 cask 'sublime-text'
 cask 'textexpander'
+cask 'tor-browser'
 cask 'vidrio'
 cask 'visual-studio-code'
 cask 'workbench'
@@ -86,6 +89,7 @@ mas 'Disk Cleaner', id: 970246631
 mas 'DuckDuckGo Privacy Essentials', id: 1482920575
 mas 'ImageFinder for Safari', id: 1514863337
 mas 'iStat Menus', id: 1319778037
+mas 'LINE', id: 539883307
 mas 'Magnet', id: 441258766
 mas 'npmhub', id: 1542090429
 mas 'RightFont - font manager', id: 1475782381
