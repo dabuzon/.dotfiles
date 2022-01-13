@@ -39,6 +39,9 @@ ln -s $HOME/.dotfiles/vscode $HOME/.vscode
 # Remove .CFUserTextEncoding
 rm .CFUserTextEncoding
 
+# Ensure to source .zshrc file
+source .zshrc
+
 # Set macOS preferences
 # We will run this last because this will reload the shell
 source .macos
