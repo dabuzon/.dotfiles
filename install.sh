@@ -1,11 +1,16 @@
 #!/bin/sh
-
-echo "Setting up Mac..."
+echo "Setting up Machine..."
 
 # Check for Homebrew and install if we don't have it
 if test ! $(which brew); then
-  /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+  /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 fi
+
+# Complete installation
+echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"' >> /home/dabuzon/.profile
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+sudo apt-get install build-essential
+brew install gcc
 
 # Update Homebrew recipes
 brew update
@@ -30,9 +35,6 @@ antibody update
 rm -rf $HOME/.local
 ln -s $HOME/.dotfiles/nvim $HOME/.config/nvim
 
-# Symlink the Mackup config file to the home directory
-ln -s $HOME/.dotfiles/.mackup.cfg $HOME/.mackup.cfg
-
 # Symlink VSCode configuration
 ln -s $HOME/.dotfiles/vscode $HOME/.vscode
 
@@ -41,7 +43,3 @@ rm .CFUserTextEncoding
 
 # Ensure to source .zshrc file
 source .zshrc
-
-# Set macOS preferences
-# We will run this last because this will reload the shell
-source .macos
