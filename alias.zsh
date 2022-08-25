@@ -15,7 +15,6 @@ alias mb="mackup backup"
 
 # Plugins
 alias yt="youtube-dl -f bestvideo+bestaudio"
-alias wp="wifi-password"
 
 # Dev
 alias cra="yarn create react-app"
