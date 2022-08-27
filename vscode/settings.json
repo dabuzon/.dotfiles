@@ -1,0 +1,10 @@
+{
+    "workbench.startupEditor": "none",
+    "workbench.colorTheme": "Monokai Classic",
+    "editor.fontSize": 16,
+    "editor.guides.bracketPairs": true,
+    "editor.guides.bracketPairsHorizontal": true,
+    "editor.wordWrap": "on",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.settings.editor": "ui"
+}
